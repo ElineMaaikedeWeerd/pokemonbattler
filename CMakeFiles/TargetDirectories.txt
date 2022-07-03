@@ -1,0 +1,3 @@
+/Users/elinemaaike/Documents/Cpp/Pokemon/CMakeFiles/pokemon.dir
+/Users/elinemaaike/Documents/Cpp/Pokemon/CMakeFiles/edit_cache.dir
+/Users/elinemaaike/Documents/Cpp/Pokemon/CMakeFiles/rebuild_cache.dir
