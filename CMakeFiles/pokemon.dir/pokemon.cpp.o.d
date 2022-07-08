@@ -1,5 +1,4 @@
 CMakeFiles/pokemon.dir/pokemon.cpp.o: \
-  /Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/share/asan_ignorelist.txt \
   /Users/elinemaaike/Documents/Cpp/Pokemon/pokemon.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config \
