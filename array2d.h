@@ -27,15 +27,15 @@ class array2d{
         return pitch;
     }
     T& getElementReference(int x, int y){
-        return data[x + pitch*y];
+        return data[x + pitch * y];
     }
     T& operator()(int x, int y){
         return getElementReference(x,y);
     }
-    int sizeX(){
+    int const sizeX(){
         return sizex;
     }
-    int sizeY(){
+    int const sizeY(){
         return sizey;
     }
     auto begin(){
@@ -53,7 +53,7 @@ class array2d{
 
 template<class T>
 bool printArray(array2d<T> arr){
-    std::cout<<arr.sizeX()<<", "<<arr.sizeY()<<"\n";
+    // std::cout<<arr.sizeX()<<", "<<arr.sizeY()<<"\n";
     for(int i=0;i<arr.sizeX();++i){
         for(int j=0;j<arr.sizeY();++j){
             std::cout << arr(i,j) << "\t";

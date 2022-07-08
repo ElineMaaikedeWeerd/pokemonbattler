@@ -132,10 +132,11 @@ namespace battles{
         return return_array;
     }
     int battle(int attack,int defend,array2d<float> &battletable){
-        std::default_random_engine generator;
-        std::uniform_int_distribution<float> distribution(0.0,1.0);
+        static std::default_random_engine generator;
+        static std::uniform_real_distribution<float> distribution(0.0,1.0);
         float atk=distribution(generator)*battletable(attack,defend);
         float def=distribution(generator)*battletable(defend,attack);
+        // std::cout<<distribution(generator)<<"\n";
         return atk>def?attack:defend;
     }
     int gridBattle(int i,int j,array2d<int> &pokemon_grid,array2d<float> &battletable){
@@ -143,6 +144,7 @@ namespace battles{
         winner=battle(pokemon_grid(i+1,j),winner,battletable);
         winner=battle(pokemon_grid(i,j-1),winner,battletable); 
         winner=battle(pokemon_grid(i-1,j),winner,battletable);
+        // std::cout<<"winner: " << winner << "\n";
         return winner;
     }
 };
